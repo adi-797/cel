@@ -304,7 +304,7 @@ def ret_path():
   dirs = list(os.listdir(os.getcwd()))
 
   for ele in dirs:
-      if '.' in ele:
+      if '.' in ele or 'test' in ele or 'results' in ele:
           continue
       norm_dirs.append(ele)
 
